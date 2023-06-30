@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className='main'>
         <div>
             <h4>TEAMIO</h4>
             <button>Sign up now</button>
