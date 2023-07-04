@@ -5,6 +5,7 @@
 ## React
 - react, react-dom, react-router-dom  
 - md, mime-types, moment  
+- react-icons
 
 ## Redux
 - react-redux, redux-promise, redux-thunk  

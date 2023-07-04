@@ -1,7 +1,10 @@
 import "./IndexPage_style.css";
-
 // Chakra import
 import { Image } from '@chakra-ui/react'
+// react-icons
+import { AiOutlineInstagram, AiOutlineFacebook } from 'react-icons/ai';
+import { FaTwitter } from 'react-icons/fa';
+
 
 function IndexPage() {
     return(
@@ -37,7 +40,49 @@ function IndexPage() {
                 </div>
             </div>
             <div className="index-footer-container">
-                footer 파트
+                <div className="index-footer-left">
+                    <div>
+                        <h2>TEAMIO</h2>
+                        <p className="title">Simple tool for team messaging and communication.</p>
+                        <p className="content">Stay in touch with us.</p>
+                        <ul className="icons">
+                            <li><AiOutlineInstagram size="24px"/></li>
+                            <li><AiOutlineFacebook size="24px"/></li>
+                            <li><FaTwitter size="24px"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="index-footer-right">
+                    <ul>
+                        <li className="title">Product</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                        <li>Enterprise</li>
+                    </ul>
+                    <ul>
+                        <li className="title">Pricing</li>
+                        <li>Free version</li>
+                        <li>Compansion</li>
+                    </ul>
+                    <ul>
+                        <li className="title">Company</li>
+                        <li>About us</li>
+                        <li>Jobs</li>
+                        <li>News</li>
+                    </ul>
+                    <ul>
+                        <li className="title">Resources</li>
+                        <li>Blog</li>
+                        <li>Knowledge hub</li>
+                        <li>Sales support</li>
+                    </ul>
+                    <ul>
+                        <li className="title">Support</li>
+                        <li>Chat</li>
+                        <li>Feedback</li>
+                        <li>COntact form</li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
