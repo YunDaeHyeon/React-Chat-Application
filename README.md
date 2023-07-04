@@ -12,4 +12,6 @@
   
 ## CSS Framework
 - Chakra UI  
-  
+
+# 개발 중 UI
+![index_page](https://github.com/YunDaeHyeon/React-Chat-Application/assets/62231651/9b7a442b-4179-4a0c-acc8-d74bfb020c02)  
