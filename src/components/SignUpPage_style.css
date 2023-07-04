@@ -1,0 +1,23 @@
+.sign-up-main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.sign-up-left-container{
+    width: 640px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.sign-up-left-background-image{
+    width: 640px;
+    height: 100%;
+    background-size: contain;
+}
+
+.sign-up-right-container{
+    width: 60%;
+    height: 100%;
+    border: 1px solid red;
+}

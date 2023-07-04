@@ -1,4 +1,5 @@
 import "./IndexPage_style.css";
+import { useNavigate } from "react-router-dom";
 // Chakra import
 import { Image } from '@chakra-ui/react'
 // react-icons
@@ -7,18 +8,24 @@ import { FaTwitter } from 'react-icons/fa';
 
 
 function IndexPage() {
+    let navigate = useNavigate();
+
+    const onClickSignUpPageMove = () => {
+        navigate("/sign-up");
+    }
+
     return(
         <div className="index-container">
             <div className="index-header-container">
                 <h1>TEAMIO</h1>
-                <button>Sign up now</button>
+                <button onClick={onClickSignUpPageMove}>Sign up now</button>
             </div>
             <div className="index-figure-container">
                 <div className="index-figure-left">
                     <div>
                         <h2>Bring your work<br/>& team together</h2>
                         <p>Work fast and flexible by communicating effectively.</p>
-                        <button>Sign up now</button>
+                        <button onClick={onClickSignUpPageMove}>Sign up now</button>
                     </div>
                 </div>
                 <div className="index-figure-right">
