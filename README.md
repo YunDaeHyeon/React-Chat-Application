@@ -1,4 +1,4 @@
-# 프로젝트 협업 서비스
+# 당신의 소통과 협업을 위해. WORKBEE 
 개발 기간 : 23.06.30 ~ ing  
   
 # Project Dependencies
@@ -14,4 +14,9 @@
 - Chakra UI  
 
 # 개발 중 UI
-![index_page](https://github.com/YunDaeHyeon/React-Chat-Application/assets/62231651/9b7a442b-4179-4a0c-acc8-d74bfb020c02)  
+## 최초 화면  
+![1](https://github.com/YunDaeHyeon/React-Chat-Application/assets/62231651/07ca8491-2445-4a84-a032-1c688716e2cb)  
+![2](https://github.com/YunDaeHyeon/React-Chat-Application/assets/62231651/a129f729-eadd-45d0-ab78-740d7f6c0da9)  
+
+## 가입화면 1
+![3](https://github.com/YunDaeHyeon/React-Chat-Application/assets/62231651/d1366993-8d1d-40d8-8d01-91406172d04d)  

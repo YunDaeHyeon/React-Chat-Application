@@ -17,7 +17,7 @@ function IndexPage() {
     return(
         <div className="index-container">
             <div className="index-header-container">
-                <h1>TEAMIO</h1>
+                <h1>WORKBEE</h1>
                 <button onClick={onClickSignUpPageMove}>Sign up now</button>
             </div>
             <div className="index-figure-container">
@@ -35,7 +35,7 @@ function IndexPage() {
                 </div>
             </div>
             <div className="index-section-container">
-                <p>"We love using Teamio. Our efficiency grew by 45% and that's amazing!"</p>
+                <p>"We love using Workbee. Our efficiency grew by 45% and that's amazing!"</p>
                 <div className="index-section-profile">
                     <Image
                         className="index-sesction-image"
@@ -49,7 +49,7 @@ function IndexPage() {
             <div className="index-footer-container">
                 <div className="index-footer-left">
                     <div>
-                        <h2>TEAMIO</h2>
+                        <h2>WORKBEE</h2>
                         <p className="title">Simple tool for team messaging and communication.</p>
                         <p className="content">Stay in touch with us.</p>
                         <ul className="icons">
