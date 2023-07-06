@@ -4,11 +4,12 @@ import { Image } from '@chakra-ui/react'
 import "./SignUpPage_style.css";
 
 function SignUpPage(){
-    // let navigate = useNavigate();
+    let navigate = useNavigate();
 
-    // const onIndexPageMove = () => {
-    //     navigate("/");
-    // }
+    const onClickSetWorkMove = (e) => {
+        e.preventDefault();
+        navigate("/set-work");
+    }
 
     return(
         <div className="sign-up-main-container">
@@ -23,7 +24,7 @@ function SignUpPage(){
             </div>
             <div className="sign-up-right-container">
                 <div className="sign-up-right-inner">
-                    <h2 align="left">Sign up</h2>
+                    <h2>Sign up</h2>
                     <p>Hello, Welcom to WorkBee! First, enter your name and email<br/>you use for work.</p>
                     <form className="sign-up-form">
                         <input
@@ -38,7 +39,7 @@ function SignUpPage(){
                             className="sign-up-input"
                             placeholder="Email@work.com"
                             />
-                        <button>Continue</button>
+                        <button onClick={onClickSetWorkMove}>Continue</button>
                     </form>
                 </div>
             </div>
