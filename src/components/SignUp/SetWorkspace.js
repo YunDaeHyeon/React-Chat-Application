@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./SetWorkspace_style.css";
 
 function SetWorkspace(){
+    let navigate = useNavigate();
 
-    const onClickSetWorkMove = () => {
-
+    const onClickSetMatesPageMove = () => {
+        navigate("/set-mates");
     }
 
     return(
@@ -30,7 +32,7 @@ function SetWorkspace(){
                                 placeholder="Customer Experience Team"
                                 />
                             <p className="set-work-add-item">+ Add team</p>
-                        <button onClick={onClickSetWorkMove}>Continue</button>
+                        <button onClick={onClickSetMatesPageMove}>Continue</button>
                     </form>
             </div>
         </div>

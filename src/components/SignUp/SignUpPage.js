@@ -6,7 +6,7 @@ import "./SignUpPage_style.css";
 function SignUpPage(){
     let navigate = useNavigate();
 
-    const onClickSetWorkMove = (e) => {
+    const onClickSetWorkPageMove = (e) => {
         e.preventDefault();
         navigate("/set-work");
     }
@@ -39,7 +39,7 @@ function SignUpPage(){
                             className="sign-up-input"
                             placeholder="Email@work.com"
                             />
-                        <button onClick={onClickSetWorkMove}>Continue</button>
+                        <button onClick={onClickSetWorkPageMove}>Continue</button>
                     </form>
                 </div>
             </div>
