@@ -1,8 +1,15 @@
 import "./SetTeammates_style.css";
+import { useNavigate } from "react-router-dom";
 // react-icons
 import { BiLink } from 'react-icons/bi';
 
 function SetTeammates(){
+    let navigate = useNavigate();
+    
+    const onClickMainPageMove = () => {
+        navigate("/main");
+    };
+
     return(
         <div className="set-mates-container">
             <h2>WORKBEE</h2>
@@ -29,7 +36,7 @@ function SetTeammates(){
                                      Send an invite link
                                 </p>
                             </div>
-                        <button>Start</button>
+                        <button onClick={onClickMainPageMove}>Start</button>
                     </form>
             </div>
         </div>

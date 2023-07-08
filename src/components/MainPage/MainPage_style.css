@@ -1,0 +1,48 @@
+/* 메인 컨테이너 */
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 1px solid red;
+}
+
+/* 네비게이션 컨테이너 (메인 페이지 좌측 컴포넌트) */
+.navigation-container{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    border: 1px solid blue;
+}
+
+.navigation-tab-container{
+    width: 18%;
+    height: 100vh;
+    border: 0.5px dotted red;
+}
+
+.navigation-tab-inner{
+    width: 82%;
+    height: 100vh;
+    border: 0.5px dotted black;
+}
+
+/* 컨텐츠 컨테이너 (메인 페이지 우측 컴포넌트) */
+.content-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.content-search-panel{
+    width: 100%;
+    height: 6.7%;
+    border: 0.5px dotted red;
+}
+
+.content-inner{
+    width: 100%;
+    height: 97.3%;
+    border: 0.5px dotted black;
+}
