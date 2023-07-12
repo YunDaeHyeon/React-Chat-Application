@@ -14,16 +14,53 @@
     border: 1px solid blue;
 }
 
+/* 탭바 */
 .navigation-tab-container{
     width: 18%;
     height: 100vh;
+    background-color: #141414;
+    text-align: center;
+    color: #FFFFFF;
     border: 0.5px dotted red;
+    overflow: hidden;
 }
 
+h2.navigation-tab-title-top{
+    font: 400 19px/1 'Kanit';
+    margin-top: 10px;
+}
+
+h2.navigation-tab-title-bottom{
+    font: 400 19px/1 'Kanit';
+    margin-bottom: 10px;
+}
+
+.navigation-tab-icon{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 컨텐츠들 */
 .navigation-tab-inner{
     width: 82%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     border: 0.5px dotted black;
+}
+
+.navigation-tab-content-selector{
+    width: 100%;
+    height: 6.7%;
+    background-color: #2041E3;
+}
+
+.navigation-tab-content{
+    width: 100%;
+    height: 97.3%;
+    background-color: #EFF4FC;
 }
 
 /* 컨텐츠 컨테이너 (메인 페이지 우측 컴포넌트) */
@@ -35,9 +72,11 @@
     border: 1px solid green;
 }
 
+/* 검색 패널*/
 .content-search-panel{
     width: 100%;
     height: 6.7%;
+    background-color: #3254FF;
     border: 0.5px dotted red;
 }
 
