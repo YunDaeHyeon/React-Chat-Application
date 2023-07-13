@@ -17,7 +17,11 @@ function IndexPage() {
     return(
         <div className="index-container">
             <div className="index-header-container">
-                <h1>WORKBEE</h1>
+                <Image className="index-header-title-logo"
+                    borderRadius="full"
+                    boxSize="35px"
+                    src="https://github.com/YunDaeHyeon/WorkBee/assets/62231651/71fc3ca3-6e4a-4cf2-b623-5bb56dda6fa9"
+                    alt="index title logo"/><h1>WORKBEE</h1>
                 <button onClick={onClickSignUpPageMove}>Sign up now</button>
             </div>
             <div className="index-figure-container">

@@ -9,9 +9,15 @@
 .index-header-container h1{
     position: absolute;
     top: 20px;
-    left: 35px;
+    left: 70px;
     font: bold 24px/1 'Kanit';
     color: #030303;
+}
+
+.index-header-title-logo{
+    position: absolute;
+    top: 15px;
+    left: 35px;
 }
 
 .index-header-container button{
