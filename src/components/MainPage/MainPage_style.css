@@ -25,14 +25,11 @@
     overflow: hidden;
 }
 
-h2.navigation-tab-title-top{
-    font: 400 19px/1 'Kanit';
-    margin-top: 10px;
-}
-
-h2.navigation-tab-title-bottom{
-    font: 400 19px/1 'Kanit';
-    margin-bottom: 10px;
+.navigation-tab-title-logo{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .navigation-tab-icon{
