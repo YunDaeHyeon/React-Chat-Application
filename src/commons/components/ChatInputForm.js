@@ -14,16 +14,16 @@ function ChatInputForm(){
                 className="chat-input-form-textarea"
                 placeholder="Type a new message..."></textarea>
             <div className="chat-input-form-buttons">
-                <div>
-                    <TbAlphabetLatin/>
-                    <AiOutlinePaperClip/>
-                    <BiLink/>
-                    <MdRecordVoiceOver/>
-                    <BsCameraVideoFill/>
-                    <FaFaceSmile/>
+                <div className="chat-input-form-icons">
+                    <TbAlphabetLatin size="24px" style={{marginLeft:"10px"}}/>
+                    <AiOutlinePaperClip size="24px" style={{marginLeft:"10px", marginRight:"10px"}}/>
+                    <BiLink size="24px"/>
+                    <MdRecordVoiceOver size="24px" style={{marginLeft:"10px", marginRight:"10px"}}/>
+                    <BsCameraVideoFill size="24px"/>
+                    <FaFaceSmile size="24px" style={{marginLeft:"10px", marginRight:"10px"}}/>
                 </div>
-                <div>
-                    <BiSolidPaperPlane/>
+                <div className="chat-input-form-send">
+                    <BiSolidPaperPlane style={{marginRight:"10px"}}size="24px"/>
                 </div>
             </div>
         </div>
