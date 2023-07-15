@@ -27,3 +27,6 @@
   
 ## 가입화면 - 메이트 구성
 ![5](https://github.com/YunDaeHyeon/WorkBee/assets/62231651/d9fcea0f-22df-4717-a502-cac574224d53)  
+
+## 메인화면 - 구현한 최신 날짜 : 23.07.16
+![메인화면](https://github.com/YunDaeHyeon/WorkBee/assets/62231651/75fc50a9-31fb-45dd-8df2-441260ae0ac8)  
