@@ -79,7 +79,6 @@ form.sign-up-form input.sign-up-input:focus{
     color: #141414;
     font-size: 16px;
     padding-left: 5px;
-
 }
 
 form.sign-up-form input.sign-up-input::placeholder{

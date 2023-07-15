@@ -17,6 +17,7 @@ import { AiFillFolder } from 'react-icons/ai';
 
 // hook
 import CircleIcon from "../../commons/components/CircleIcon";
+import ChatInputForm from "../../commons/components/ChatInputForm";
 
 function MainPage(){
     return(
@@ -135,6 +136,11 @@ function MainPage(){
                                 <Avatar className="content-header-right-icon" name='Prosper Otemuyiwa' src='https://images.pexels.com/photos/1715092/pexels-photo-1715092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
                                 <Avatar className="content-header-right-icon" name='Christian Nwamba' src='https://images.pexels.com/photos/2766408/pexels-photo-2766408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
                             </AvatarGroup>
+                        </div>
+                    </div>
+                    <div className="content-body">
+                        <div className="content-body-inner">
+                            <ChatInputForm/>
                         </div>
                     </div>
                 </div>
