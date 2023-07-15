@@ -1,5 +1,6 @@
-# 당신의 소통과 협업을 위해. WORKBEE 
-개발 기간 : 23.06.30 ~ ing  
+<h1 align="center">당신의 소통과 협업을 위해. WORKBEE</h2>
+<p align="center"><img src="https://github.com/YunDaeHyeon/WorkBee/assets/62231651/480e7e21-378a-4f31-9537-ef3abc502d7e" height="340px" width="322px"></p>
+<p align="center">개발 기간 : 23.06.30 ~ ing</p>
   
 # Project Dependencies
 ## React
