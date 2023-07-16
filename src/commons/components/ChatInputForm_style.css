@@ -37,3 +37,11 @@ textarea.chat-input-form-textarea::placeholder{
     display: flex;
     flex-direction: row;
 }
+
+/* 이모지 선택 */
+.chat-input-form-emoji-picker{
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  transform: translate(-50%, calc(-100% - 10px));
+}
