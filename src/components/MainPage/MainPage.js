@@ -18,6 +18,7 @@ import { AiFillFolder } from 'react-icons/ai';
 // hook
 import CircleIcon from "../../commons/components/CircleIcon";
 import ChatInputForm from "../../commons/components/ChatInputForm";
+import ChatMessage from "../../commons/components/ChatMessage";
 
 function MainPage(){
     return(
@@ -139,7 +140,10 @@ function MainPage(){
                         </div>
                     </div>
                     <div className="content-body">
+                            {/* 메시지 컴포넌트 */}
+                            <ChatMessage/>
                         <div className="content-body-inner">
+                            {/* 메시지 입력 컴포넌트 */}
                             <ChatInputForm/>
                         </div>
                     </div>
