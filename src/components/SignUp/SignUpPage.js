@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 // Chakra import
 import { Image } from '@chakra-ui/react'
 import "./SignUpPage_style.css";
+import KakaoLoginComponent from "../../commons/api/KakaoLoginComponent";
 
 function SignUpPage(){
     let navigate = useNavigate();
@@ -40,6 +41,7 @@ function SignUpPage(){
                             placeholder="Email@work.com"
                             />
                         <button onClick={onClickSetWorkPageMove}>Continue</button>
+                        <KakaoLoginComponent/>
                     </form>
                 </div>
             </div>
