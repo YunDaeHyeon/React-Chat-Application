@@ -1,5 +1,7 @@
 import KakaoLogin from "react-kakao-login";
 
+import "./KakaoLoginComponent_style.css";
+
 function KakaoLoginComponent(){
     // 추후 분리시켜 git에서 제외.
     const kakaoClientId = '17f2761a93654cde2dedadd4b14892bb';
@@ -18,6 +20,7 @@ function KakaoLoginComponent(){
     return(
         <>
             <KakaoLogin
+                className="kakao-login-button"
                 token={kakaoClientId}
                 onSuccess={KakaoOnSuccess}
                 onFail={KakaoOnFailure}

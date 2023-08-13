@@ -41,8 +41,8 @@ function SignUpPage(){
                             placeholder="Email@work.com"
                             />
                         <button onClick={onClickSetWorkPageMove}>Continue</button>
-                        <KakaoLoginComponent/>
                     </form>
+                        <KakaoLoginComponent/>
                 </div>
             </div>
         </div>
