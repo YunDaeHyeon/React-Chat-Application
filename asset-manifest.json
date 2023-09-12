@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/workbee/static/css/main.dc676153.css",
+    "main.js": "/workbee/static/js/main.0a06c674.js",
+    "index.html": "/workbee/index.html",
+    "main.dc676153.css.map": "/workbee/static/css/main.dc676153.css.map",
+    "main.0a06c674.js.map": "/workbee/static/js/main.0a06c674.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc676153.css",
+    "static/js/main.0a06c674.js"
+  ]
+}
