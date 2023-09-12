@@ -32,11 +32,11 @@ function SetTeammates(){
                             <div className="set-mates-form-inner">
                                 <p className="set-mates-add-people">+ Invite more people</p>
                                 <p className="set-mates-send-link">
-                                    <BiLink style={{display:"inline-block",marginRight: 0, marginLeft: 'auto'}} size="20px"/>
+                                    <BiLink type="button" style={{display:"inline-block",marginRight: 0, marginLeft: 'auto'}} size="20px"/>
                                      Send an invite link
                                 </p>
                             </div>
-                        <button onClick={onClickMainPageMove}>Start</button>
+                        <button type="submit" onClick={onClickMainPageMove}>Start</button>
                     </form>
             </div>
         </div>

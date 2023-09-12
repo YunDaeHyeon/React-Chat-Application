@@ -32,7 +32,7 @@ function SetWorkspace(){
                                 placeholder="Customer Experience Team"
                                 />
                             <p className="set-work-add-item">+ Add team</p>
-                        <button onClick={onClickSetMatesPageMove}>Continue</button>
+                        <button type="submit" onClick={onClickSetMatesPageMove}>Continue</button>
                     </form>
             </div>
         </div>

@@ -142,6 +142,9 @@ function MainPage(){
                     <div className="content-body">
                             {/* 메시지 컴포넌트 */}
                             <ChatMessage/>
+                            <ChatMessage/>
+                            <ChatMessage/>
+                            <ChatMessage/>
                         <div className="content-body-inner">
                             {/* 메시지 입력 컴포넌트 */}
                             <ChatInputForm/>
