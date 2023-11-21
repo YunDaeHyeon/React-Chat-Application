@@ -1,15 +1,41 @@
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 // Chakra import
 import { Image } from '@chakra-ui/react'
 import "./SignUpPage_style.css";
 import KakaoLoginComponent from "../../commons/api/KakaoLoginComponent";
+import axios from "axios";
 
 function SignUpPage(){
     let navigate = useNavigate();
 
-    const onClickSetWorkPageMove = (e) => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    // input 태그 포커싱을 위한 DOM 접근 훅 호출
+    const nameInput = useRef();
+
+    // onChages Handlers
+    const onNameChage = (e) => { setName(e.target.value); }
+    const onEmailChage = (e) => { setEmail(e.target.value); }
+    const onReset = (e) => { setName(''); setEmail(''); }
+    
+    // Button Click Event
+    const onClickSetWorkPageMove = async(e) => {
         e.preventDefault();
-        navigate("/set-work");
+        const response = await axios.post(`https://${auth.serverIP}:5000/action`,{name, email});
+        if(response.data === 'failure'){
+            alert("가입 실패");
+            nameInput.current.focus(); // name input에 포커스 지정
+            onReset(e);
+        }else if(response.data === 'error'){
+            alert("서버 오류");
+            onReset(e);
+        }else if(Object.keys(response.data).length !== 0){
+            alert("성공");
+            onReset(e);
+            navigate("/set-work");
+        }
     }
 
     return(
@@ -30,15 +56,16 @@ function SignUpPage(){
                     <form className="sign-up-form">
                         <input
                             className="sign-up-input"
-                            placeholder="First name"
-                            />
-                        <input
-                            className="sign-up-input"
-                            placeholder="Last name"
+                            placeholder="Your name"
+                            onChange={onNameChage}
+                            value={name}
+                            ref={nameInput} // 가입 실패 시 포커싱 지정
                             />
                         <input
                             className="sign-up-input"
                             placeholder="Email@work.com"
+                            onChange={onEmailChage}
+                            value={email}
                             />
                         <button onClick={onClickSetWorkPageMove}>Continue</button>
                     </form>
