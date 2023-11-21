@@ -37,7 +37,7 @@ function SignUpPage(){
             navigate("/set-work");
         }
     }
-
+    // https://velog.io/@badasea/ExpressNode.js-Mysql-3-MVC 참고
     return(
         <div className="sign-up-main-container">
             <div className="sign-up-left-container">
