@@ -22,8 +22,9 @@ function SignUpPage(){
     
     // Button Click Event
     const onClickSetWorkPageMove = async(e) => {
-        e.preventDefault();
-        const response = await axios.post(`https://${auth.serverIP}:5000/action`,{name, email});
+       e.preventDefault();
+        const response = await axios.post(`https://workbee-backend-edubx.run.goorm.site/action`,{email, name});
+        console.log(response);
         if(response.data === 'failure'){
             alert("가입 실패");
             nameInput.current.focus(); // name input에 포커스 지정
@@ -31,7 +32,7 @@ function SignUpPage(){
         }else if(response.data === 'error'){
             alert("서버 오류");
             onReset(e);
-        }else if(Object.keys(response.data).length !== 0){
+        }else if(response.data === 'success'){
             alert("성공");
             onReset(e);
             navigate("/set-work");

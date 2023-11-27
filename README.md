@@ -7,13 +7,13 @@
 - react, react-dom, react-router-dom  
 - md, mime-types, moment  
 - react-icons
-
+  
 ## Redux
 - react-redux, redux-promise, redux-thunk  
   
 ## CSS Framework
 - Chakra UI  
-
+    
 # 개발 중 UI
 ## 최초 화면  
 ![1](https://github.com/YunDaeHyeon/WorkBee/assets/62231651/8381b516-5b2f-4ffb-90d5-e49153617c2a)  
