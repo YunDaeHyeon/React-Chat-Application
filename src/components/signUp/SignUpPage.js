@@ -38,6 +38,12 @@ function SignUpPage(){
             navigate("/create-company");
         }
     }
+
+    // 로그인 페이지 이동
+    const onClickSignInPageMove = () => {
+        navigate("/sign-in");
+    }
+
     // https://velog.io/@badasea/ExpressNode.js-Mysql-3-MVC 참고
     return(
         <div className="sign-up-main-container">
@@ -72,7 +78,7 @@ function SignUpPage(){
                     </form>
                     <div className="check-sign-up">
                         <p>Have you ever signed up?</p>
-                        <button>Sign in</button>  
+                        <button onClick={onClickSignInPageMove}>Sign in</button>  
                     </div>
                 </div>
             </div>
