@@ -5,8 +5,8 @@ import {
 // component
 import IndexPage from "./components/IndexPage";
 import SignUpPage from "./components/SignUp/SignUpPage";
-import SetWorkspace from "./components/SignUp/SetWorkspace";
-import SetTeammates from "./components/SignUp/SetTeammates";
+import SetWorkspace from "./components/createCompany/SetWorkspace";
+import SetTeammates from "./components/createTeam/SetTeammates";
 import MainPage from "./components/MainPage/MainPage";
 
 function App() {
