@@ -34,8 +34,8 @@ function SignUpPage(){
             onReset(e);
         }else if(response.data === 'success'){
             alert("성공");
-            onReset(e);
-            navigate("/set-work");
+            onReset();
+            navigate("/create-company");
         }
     }
     // https://velog.io/@badasea/ExpressNode.js-Mysql-3-MVC 참고
@@ -53,7 +53,7 @@ function SignUpPage(){
             <div className="sign-up-right-container">
                 <div className="sign-up-right-inner">
                     <h2>Sign up</h2>
-                    <p>Hello, Welcom to WorkBee! First, enter your name and email<br/>you use for work.</p>
+                    <p>Welcome to WorkBee. If it's your first visit. Please sign up as a member.</p>
                     <form className="sign-up-form">
                         <input
                             className="sign-up-input"
@@ -70,7 +70,10 @@ function SignUpPage(){
                             />
                         <button onClick={onClickSetWorkPageMove}>Continue</button>
                     </form>
-                        <KakaoLoginComponent/>
+                    <div className="check-sign-up">
+                        <p>Have you ever signed up?</p>
+                        <button>Sign in</button>  
+                    </div>
                 </div>
             </div>
         </div>

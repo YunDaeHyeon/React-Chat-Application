@@ -53,6 +53,7 @@
 .sign-up-right-inner p{
     color: #030303;
     font: 300 18px/1 'Kanit';
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
@@ -79,7 +80,6 @@ form.sign-up-form input.sign-up-input:focus{
     color: #141414;
     font-size: 16px;
     padding-left: 5px;
-
 }
 
 form.sign-up-form input.sign-up-input::placeholder{
@@ -96,5 +96,27 @@ form.sign-up-form button{
     color: #FFFFFF;
     border-radius: 5px;
     margin-bottom: 15px;
+    font: 300 20px/1 'Kanit';
+}
+
+div.check-sign-up{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.check-sign-up p{
+    color: grey;
+    font: 300 18px/1 'Kanit';
+    margin: 0 auto;
+}
+
+div.check-sign-up button{
+    width: 300px;
+    height: 40px;
+    background-color: #3254FF;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 10px;
     font: 300 20px/1 'Kanit';
 }

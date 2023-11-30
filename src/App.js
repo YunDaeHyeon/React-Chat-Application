@@ -14,8 +14,8 @@ function App() {
     <Routes>
       <Route index path="/" element={<IndexPage/>}/>
       <Route path="/sign-up" element={<SignUpPage/>}/>
-      <Route path="/set-work" element={<SetWorkspace/>}/>
-      <Route path="/set-mates" element={<SetTeammates/>}/>
+      <Route path="/create-company" element={<SetWorkspace/>}/>
+      <Route path="/create-team" element={<SetTeammates/>}/>
       <Route path="/main" element={<MainPage/>}/>
     </Routes>
   );
