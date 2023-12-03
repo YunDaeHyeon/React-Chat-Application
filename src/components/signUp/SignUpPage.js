@@ -3,39 +3,70 @@ import { useNavigate } from "react-router-dom";
 // Chakra import
 import { Image } from '@chakra-ui/react'
 import "./SignUpPage_style.css";
-import KakaoLoginComponent from "../../commons/api/KakaoLoginComponent";
+// import KakaoLoginComponent from "../../commons/api/KakaoLoginComponent";
 import axios from "axios";
 
 function SignUpPage(){
     let navigate = useNavigate();
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [user, setUser] = useState({
+        userName : '',
+        userEmail : '',
+        userPassword : '',
+        userPasswordCheck : ''
+    });
+
+    const { userName, userEmail, userPassword, userPasswordCheck } = user;
 
     // input 태그 포커싱을 위한 DOM 접근 훅 호출
-    const nameInput = useRef();
+    const passwordInput = useRef();
 
     // onChages Handlers
-    const onNameChage = (e) => { setName(e.target.value); }
-    const onEmailChage = (e) => { setEmail(e.target.value); }
-    const onReset = (e) => { setName(''); setEmail(''); }
+    const onInputChange = (e) => {
+        // e.target에서 입력한 input의 id와 value 추출
+        const { id, value } = e.target;
+        setUser({
+            ...user,
+            [id] : value
+        });
+    }
+
+    // onReset Handlers
+    const onReset = (e) => {
+        setUser({
+            userName : '',
+            userEmail : '',
+            userPassword : '',
+            userPasswordCheck : ''
+        });
+    };
     
     // Button Click Event
     const onClickSetWorkPageMove = async(e) => {
-       e.preventDefault();
-        const response = await axios.post(`https://workbee-backend-edubx.run.goorm.site/action`,{email, name});
-        console.log(response);
-        if(response.data === 'failure'){
-            alert("가입 실패");
-            nameInput.current.focus(); // name input에 포커스 지정
-            onReset(e);
-        }else if(response.data === 'error'){
-            alert("서버 오류");
-            onReset(e);
-        }else if(response.data === 'success'){
-            alert("성공");
-            onReset();
-            navigate("/create-company");
+        // 입력하지 않은 칸이 존재한다면
+        if(user.userName.length === 0 || user.userId.length === 0 || 
+        user.userPassword.length === 0 || user.userPasswordCheck === 0){
+            alert("입력하지 않은 칸이 존재합니다.");
+            e.preventDefault(); // submit 중단
+        }else{
+            // 비밀번호 확인이 틀렸으면
+            if(user.userPassword !== user.userPasswordCheck){
+                alert("동일한 비밀번호가 아닙니다.");
+                setUser({...user, userPassword: '', userPasswordCheck: ''});
+                passwordInput.current.focus(); // 포커스 지정
+                e.preventDefault();
+            }else{
+                e.preventDefault();
+                const response = await axios.post(`https://workbee-backend-edubx.run.goorm.site/action`,{user});
+                console.log(response);
+                if(response.data === 'error'){
+                    alert("데이터를 저장하는 중 오류가 발생하였습니다.");
+                }else if(response.data === 'success'){
+                    onReset();
+                    alert("회원가입 되었습니다.");
+                    navigate("/create-company");
+                }
+            }
         }
     }
 
@@ -62,17 +93,33 @@ function SignUpPage(){
                     <p>Welcome to WorkBee. If it's your first visit. Please sign up as a member.</p>
                     <form className="sign-up-form">
                         <input
+                            id="userName"
                             className="sign-up-input"
                             placeholder="Your name"
-                            onChange={onNameChage}
-                            value={name}
-                            ref={nameInput} // 가입 실패 시 포커싱 지정
+                            value={userName}
+                            onChange={onInputChange}
                             />
                         <input
+                            id="userEmail"
                             className="sign-up-input"
                             placeholder="Email@work.com"
-                            onChange={onEmailChage}
-                            value={email}
+                            value={userEmail}
+                            onChange={onInputChange}
+                            />
+                        <input
+                            id="userPassword"
+                            className="sign-up-input"
+                            placeholder="Password"
+                            value={userPassword}
+                            onChange={onInputChange}
+                            ref={passwordInput}
+                            />
+                        <input 
+                            id="userPasswordCheck"
+                            className="sign-up-input"
+                            placeholder="PasswordCheck"
+                            value={userPasswordCheck}
+                            onChange={onInputChange}
                             />
                         <button onClick={onClickSetWorkPageMove}>Continue</button>
                     </form>
