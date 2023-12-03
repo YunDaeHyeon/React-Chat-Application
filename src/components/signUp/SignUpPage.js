@@ -42,7 +42,7 @@ function SignUpPage(){
     };
     
     // Button Click Event
-    const onClickSetWorkPageMove = async(e) => {
+    const onClickSubmit = async(e) => {
         // 입력하지 않은 칸이 존재한다면
         if(user.userName.length === 0 || user.userId.length === 0 || 
         user.userPassword.length === 0 || user.userPasswordCheck === 0){
@@ -121,7 +121,7 @@ function SignUpPage(){
                             value={userPasswordCheck}
                             onChange={onInputChange}
                             />
-                        <button onClick={onClickSetWorkPageMove}>Continue</button>
+                        <button onClick={onClickSubmit}>Continue</button>
                     </form>
                     <div className="check-sign-up">
                         <p>Have you ever signed up?</p>
